@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>m1chalik — Esports & Broadcast Production</title>
+    <title>m1chalik — Esports Producer & Observer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
@@ -20,24 +20,24 @@
     <div class="container">
         <!-- Header / Hero -->
         <header class="header" id="mainHeader">
-            <div class="esports-badge">LIVE PRODUCTION & GAMING</div>
+            <div class="esports-badge">BROADCAST & OBSERVE</div>
             <h1 class="brand-name">m1chalik</h1>
-            <p class="tagline">Esports Producer, Broadcast Specialist & Player</p>
+            <p class="tagline">Esports Producer, Professional Observer & Broadcast Specialist</p>
         </header>
 
-        <!-- Navigation Menu Grid (Pridané Gaming Stats) -->
+        <!-- Navigation Menu Grid -->
         <div class="menu-grid" id="menuGrid">
             <div class="menu-item" onclick="showSection('work')">
                 <div class="menu-code">01</div>
                 <div class="menu-title">Work & Portfolio</div>
             </div>
-            <div class="menu-item" onclick="showSection('gaming')">
+            <div class="menu-item" onclick="showSection('software')">
                 <div class="menu-code">02</div>
-                <div class="menu-title">Gaming Stats</div>
+                <div class="menu-title">Software & Hours</div>
             </div>
-            <div class="menu-item" onclick="showSection('services')">
+            <div class="menu-item" onclick="showSection('gaming')">
                 <div class="menu-code">03</div>
-                <div class="menu-title">Services</div>
+                <div class="menu-title">Game Observing</div>
             </div>
             <div class="menu-item" onclick="showSection('about')">
                 <div class="menu-code">04</div>
@@ -56,57 +56,89 @@
             <div class="content-section" id="work">
                 <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
                 <h2 class="section-title">Featured Work</h2>
-                <p class="section-subtitle">A collection of broadcast productions, tournament overlays, and video highlights.</p>
+                <p class="section-subtitle">A collection of live broadcast productions, tournament direction, and professional observer work.</p>
                 
                 <div class="work-grid">
                     <div class="work-card">
-                        <div class="work-thumb">VALORANT Grand Finals</div>
+                        <div class="work-thumb">VALORANT Champions Tour</div>
                         <div class="work-info">
-                            <h4>Division One Esports</h4>
-                            <p>Full online broadcast production, live observer work, and real-time replay operation.</p>
-                            <span class="tech-tag">Broadcast Live</span>
+                            <h4>Main Stage Observing</h4>
+                            <p>Delivering high-pace, flawless tactical camera work and action-tracking for major esports matches.</p>
+                            <span class="tech-tag">Pro Observer</span>
                         </div>
                     </div>
                     <div class="work-card">
-                        <div class="work-thumb">LAN Event Coverage</div>
+                        <div class="work-thumb">Studio Broadcast vMix</div>
                         <div class="work-info">
-                            <h4>Local Arena Championship</h4>
-                            <p>On-site technical setup, stream management, and broadcast engineering for competitive gaming.</p>
-                            <span class="tech-tag">On-Site LAN</span>
+                            <h4>Live Show Production</h4>
+                            <p>Managing multi-camera switching, graphics, replays, and remote caster feeds in real-time.</p>
+                            <span class="tech-tag">Lead Producer</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Gaming Stats Section (Nová sekcia na hodiny a hry) -->
+            <!-- Software & Hours Section (vMix, OBS, Producer/Observer Stats) -->
+            <div class="content-section" id="software">
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                <h2 class="section-title">Software & Experience</h2>
+                <p class="section-subtitle">Tools of the trade and hours invested in mastering broadcast engineering.</p>
+                
+                <div class="work-grid">
+                    <div class="work-card">
+                        <div class="work-thumb" style="background: linear-gradient(135deg, #1e1b4b, #312e81); display: flex; align-items: center; justify-content: center;">
+                            <img src="https://img.icons8.com/color/96/obs-studio.png" alt="OBS Studio" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="work-info">
+                            <h4>OBS Studio / Streamlabs</h4>
+                            <p>Advanced scene structuring, custom filters, encoding optimization, and NDI workflows.</p>
+                            <span class="tech-tag">3,500+ Hours</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-thumb" style="background: linear-gradient(135deg, #1f2937, #374151); display: flex; align-items: center; justify-content: center;">
+                            <img src="https://img.icons8.com/fluency/96/video-production.png" alt="vMix" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="work-info">
+                            <h4>vMix Live Production</h4>
+                            <p>Virtual sets, GT Title Designer scripts, instant replay system, and professional audio routing.</p>
+                            <span class="tech-tag" style="background: rgba(139, 92, 246, 0.15); color: #c084fc;">2,200+ Hours</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-thumb" style="background: linear-gradient(135deg, #451a03, #78350f); display: flex; align-items: center; justify-content: center;">
+                            <img src="https://img.icons8.com/color/96/director.png" alt="Producer & Observer" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="work-info">
+                            <h4>Producer & Observer Desk</h4>
+                            <p>Show-running, rundown management, and professional spectator interface controls.</p>
+                            <span class="tech-tag" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">4,000+ Hours On-Air</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Observing Section -->
             <div class="content-section" id="gaming">
                 <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-                <h2 class="section-title">Gaming & Hours</h2>
-                <p class="section-subtitle">A quick look at what I play and how many hours I've put into the grind.</p>
+                <h2 class="section-title">Game Observing Hours</h2>
+                <p class="section-subtitle">Deep understanding of game mechanics translated into professional observer camera work.</p>
                 
                 <div class="work-grid">
                     <div class="work-card">
                         <div class="work-thumb" style="background: linear-gradient(135deg, #7f1d1d, #b91c1c);">VALORANT</div>
                         <div class="work-info">
-                            <h4>Competitive FPS</h4>
-                            <p>Main game, tactical shooter, ranked grinding & strategy.</p>
-                            <span class="tech-tag" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">1,450 Hours</span>
+                            <h4>Pro Tactical Observer</h4>
+                            <p>Anticipating executes, tracking utility trades, and capturing every frag cleanly.</p>
+                            <span class="tech-tag" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">2,500+ Obs Hours</span>
                         </div>
                     </div>
                     <div class="work-card">
                         <div class="work-thumb" style="background: linear-gradient(135deg, #14532d, #16a34a);">Counter-Strike 2</div>
                         <div class="work-info">
-                            <h4>Tactical Shooter</h4>
-                            <p>Aim training, utility lineups, and high-tier competitive matches.</p>
-                            <span class="tech-tag" style="background: rgba(34, 197, 94, 0.15); color: #4ade80;">980 Hours</span>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-thumb" style="background: linear-gradient(135deg, #1e3a8a, #2563eb);">Apex Legends</div>
-                        <div class="work-info">
-                            <h4>Battle Royale</h4>
-                            <p>Fast-paced movement mechanics and team synergy.</p>
-                            <span class="tech-tag">450 Hours</span>
+                            <h4>CS2 Broadcast Observer</h4>
+                            <p>X-ray control, clutch framing, and director camera management.</p>
+                            <span class="tech-tag" style="background: rgba(34, 197, 94, 0.15); color: #4ade80;">1,800+ Obs Hours</span>
                         </div>
                     </div>
                 </div>
@@ -120,12 +152,12 @@
                 
                 <div class="work-grid">
                     <div class="work-card">
-                        <h4>Broadcast Production</h4>
-                        <p>End-to-end stream setup using OBS/vMix, custom motion graphics, alerts, and multi-cam switching.</p>
+                        <h4>Broadcast Engineering</h4>
+                        <p>End-to-end stream setups using OBS and vMix, custom motion graphics, alerts, and multi-cam switching.</p>
                     </div>
                     <div class="work-card">
-                        <h4>Tournament Operations</h4>
-                        <p>Replay operation, live observing, lobby management, and technical support for competitive matches.</p>
+                        <h4>Tournament Observing</h4>
+                        <p>Professional game spectating, observer workflow setup, and real-time directorial execution.</p>
                     </div>
                 </div>
             </div>
@@ -135,8 +167,8 @@
                 <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
                 <h2 class="section-title">About m1chalik</h2>
                 <p class="section-subtitle">
-                    Bringing competitive gaming moments to life. From stream overlays to full online broadcast productions, 
-                    I combine passion for esports with professional technical execution. Available for remote and on-site events.
+                    Bringing competitive gaming moments to life from behind the switcher and the observer HUD. 
+                    Combining deep game sense with advanced broadcast production tools to deliver top-tier esports experiences.
                 </p>
             </div>
 
@@ -144,14 +176,14 @@
             <div class="content-section" id="contact">
                 <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
                 <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">Ready to collaborate on your next tournament or broadcast?</p>
+                <p class="section-subtitle">Ready to book an experienced producer or observer for your next event?</p>
                 
                 <div class="contact-box">
                     <div class="contact-row">
                         <span>📧</span> <strong>Email:</strong> contact@m1chalik.gg
                     </div>
                     <div class="contact-row">
-                        <span>💬</span> <strong>Discord / Socials:</strong> @m1chalik
+                        <span>💬</span> <strong>Discord:</strong> @m1chalik
                     </div>
                 </div>
             </div>

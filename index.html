@@ -20,27 +20,31 @@
     <div class="container">
         <!-- Header / Hero -->
         <header class="header" id="mainHeader">
-            <div class="esports-badge">LIVE PRODUCTION</div>
+            <div class="esports-badge">LIVE PRODUCTION & GAMING</div>
             <h1 class="brand-name">m1chalik</h1>
-            <p class="tagline">Esports Producer, Broadcast Specialist & Stream Creator</p>
+            <p class="tagline">Esports Producer, Broadcast Specialist & Player</p>
         </header>
 
-        <!-- Navigation Menu Grid -->
+        <!-- Navigation Menu Grid (Pridané Gaming Stats) -->
         <div class="menu-grid" id="menuGrid">
             <div class="menu-item" onclick="showSection('work')">
                 <div class="menu-code">01</div>
                 <div class="menu-title">Work & Portfolio</div>
             </div>
-            <div class="menu-item" onclick="showSection('services')">
+            <div class="menu-item" onclick="showSection('gaming')">
                 <div class="menu-code">02</div>
+                <div class="menu-title">Gaming Stats</div>
+            </div>
+            <div class="menu-item" onclick="showSection('services')">
+                <div class="menu-code">03</div>
                 <div class="menu-title">Services</div>
             </div>
             <div class="menu-item" onclick="showSection('about')">
-                <div class="menu-code">03</div>
+                <div class="menu-code">04</div>
                 <div class="menu-title">About Me</div>
             </div>
             <div class="menu-item" onclick="showSection('contact')">
-                <div class="menu-code">04</div>
+                <div class="menu-code">05</div>
                 <div class="menu-title">Contact</div>
             </div>
         </div>
@@ -69,6 +73,40 @@
                             <h4>Local Arena Championship</h4>
                             <p>On-site technical setup, stream management, and broadcast engineering for competitive gaming.</p>
                             <span class="tech-tag">On-Site LAN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Stats Section (Nová sekcia na hodiny a hry) -->
+            <div class="content-section" id="gaming">
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                <h2 class="section-title">Gaming & Hours</h2>
+                <p class="section-subtitle">A quick look at what I play and how many hours I've put into the grind.</p>
+                
+                <div class="work-grid">
+                    <div class="work-card">
+                        <div class="work-thumb" style="background: linear-gradient(135deg, #7f1d1d, #b91c1c);">VALORANT</div>
+                        <div class="work-info">
+                            <h4>Competitive FPS</h4>
+                            <p>Main game, tactical shooter, ranked grinding & strategy.</p>
+                            <span class="tech-tag" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">1,450 Hours</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-thumb" style="background: linear-gradient(135deg, #14532d, #16a34a);">Counter-Strike 2</div>
+                        <div class="work-info">
+                            <h4>Tactical Shooter</h4>
+                            <p>Aim training, utility lineups, and high-tier competitive matches.</p>
+                            <span class="tech-tag" style="background: rgba(34, 197, 94, 0.15); color: #4ade80;">980 Hours</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-thumb" style="background: linear-gradient(135deg, #1e3a8a, #2563eb);">Apex Legends</div>
+                        <div class="work-info">
+                            <h4>Battle Royale</h4>
+                            <p>Fast-paced movement mechanics and team synergy.</p>
+                            <span class="tech-tag">450 Hours</span>
                         </div>
                     </div>
                 </div>

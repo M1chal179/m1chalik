@@ -3,135 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>m1chalik - Portfolio & Digital Excellence</title>
+    <title>m1chalik — Esports & Broadcast Production</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Ambient Background -->
-    <div class="ambient-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
+    <!-- Ambient Esports Glow -->
+    <div class="ambient-glow">
+        <div class="glow-orb glow-1"></div>
+        <div class="glow-orb glow-2"></div>
     </div>
 
-    <!-- Main Container -->
     <div class="container">
-        <!-- Header -->
-        <div class="header" id="mainHeader">
-            <div class="logo">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#00f0ff"/>
-                            <stop offset="100%" style="stop-color:#ff00d4"/>
-                        </linearGradient>
-                    </defs>
-                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
-                    <circle cx="50" cy="50" r="6" fill="url(#logoGradient)"/>
-                </svg>
-            </div>
+        <!-- Header / Hero -->
+        <header class="header" id="mainHeader">
+            <div class="esports-badge">LIVE PRODUCTION</div>
             <h1 class="brand-name">m1chalik</h1>
-            <p class="tagline">Developer & Digital Creator Portfolio</p>
-        </div>
+            <p class="tagline">Esports Producer, Broadcast Specialist & Stream Creator</p>
+        </header>
 
-        <!-- Menu Grid -->
+        <!-- Navigation Menu Grid -->
         <div class="menu-grid" id="menuGrid">
+            <div class="menu-item" onclick="showSection('work')">
+                <div class="menu-code">01</div>
+                <div class="menu-title">Work & Portfolio</div>
+            </div>
+            <div class="menu-item" onclick="showSection('services')">
+                <div class="menu-code">02</div>
+                <div class="menu-title">Services</div>
+            </div>
             <div class="menu-item" onclick="showSection('about')">
-                <div class="menu-badge">AB</div>
+                <div class="menu-code">03</div>
                 <div class="menu-title">About Me</div>
             </div>
-            <div class="menu-item" onclick="showSection('projects')">
-                <div class="menu-badge">PR</div>
-                <div class="menu-title">Projects</div>
-            </div>
-            <div class="menu-item" onclick="showSection('skills')">
-                <div class="menu-badge">SK</div>
-                <div class="menu-title">Skills & Tech</div>
-            </div>
             <div class="menu-item" onclick="showSection('contact')">
-                <div class="menu-badge">CT</div>
+                <div class="menu-code">04</div>
                 <div class="menu-title">Contact</div>
             </div>
         </div>
 
-        <!-- Content Area -->
+        <!-- Dynamic Content Sections -->
         <div id="contentArea">
+
+            <!-- Work Section -->
+            <div class="content-section" id="work">
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A collection of broadcast productions, tournament overlays, and video highlights.</p>
+                
+                <div class="work-grid">
+                    <div class="work-card">
+                        <div class="work-thumb">VALORANT Grand Finals</div>
+                        <div class="work-info">
+                            <h4>Division One Esports</h4>
+                            <p>Full online broadcast production, live observer work, and real-time replay operation.</p>
+                            <span class="tech-tag">Broadcast Live</span>
+                        </div>
+                    </div>
+                    <div class="work-card">
+                        <div class="work-thumb">LAN Event Coverage</div>
+                        <div class="work-info">
+                            <h4>Local Arena Championship</h4>
+                            <p>On-site technical setup, stream management, and broadcast engineering for competitive gaming.</p>
+                            <span class="tech-tag">On-Site LAN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-subtitle">Handling the technical and creative side so the show runs seamlessly.</p>
+                
+                <div class="work-grid">
+                    <div class="work-card">
+                        <h4>Broadcast Production</h4>
+                        <p>End-to-end stream setup using OBS/vMix, custom motion graphics, alerts, and multi-cam switching.</p>
+                    </div>
+                    <div class="work-card">
+                        <h4>Tournament Operations</h4>
+                        <p>Replay operation, live observing, lobby management, and technical support for competitive matches.</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- About Section -->
             <div class="content-section" id="about">
                 <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title">About m1chalik</h2>
                 <p class="section-subtitle">
-                    Hi! I'm <strong>m1chalik</strong>, a passionate developer and digital creator focused on building clean, high-performance web experiences. 
-                    I love turning complex ideas into sleek, interactive digital solutions using modern technologies.
+                    Bringing competitive gaming moments to life. From stream overlays to full online broadcast productions, 
+                    I combine passion for esports with professional technical execution. Available for remote and on-site events.
                 </p>
-            </div>
-
-            <!-- Projects Section -->
-            <div class="content-section" id="projects">
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Here are some of the key projects and web applications I have worked on:</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h4>Portfolio Website</h4>
-                        <p>A high-performance modern interactive portfolio built with HTML, CSS, and JavaScript.</p>
-                        <span class="project-tech">HTML5 / CSS3 / JS</span>
-                    </div>
-                    <div class="project-card">
-                        <h4>GitHub Web App</h4>
-                        <p>Custom web interface and deployment utilizing GitHub Pages for seamless delivery.</p>
-                        <span class="project-tech">GitHub Pages</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills Section -->
-            <div class="content-section" id="skills">
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">The tools and languages I work with to bring concepts to life:</p>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h4>Frontend Development</h4>
-                        <p>HTML5, Modern CSS, JavaScript (ES6+), Responsive Design & UI/UX principles.</p>
-                        <span class="project-tech">Frontend</span>
-                    </div>
-                    <div class="project-card">
-                        <h4>Tools & Version Control</h4>
-                        <p>Git, GitHub, Command Line, Hosting & Deployment workflows.</p>
-                        <span class="project-tech">DevOps / Git</span>
-                    </div>
-                </div>
             </div>
 
             <!-- Contact Section -->
             <div class="content-section" id="contact">
                 <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
                 <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">Let's connect, collaborate, or build something amazing together!</p>
+                <p class="section-subtitle">Ready to collaborate on your next tournament or broadcast?</p>
+                
                 <div class="contact-box">
-                    <div class="contact-item">
-                        <span>🐙</span>
-                        <div>
-                            <strong>GitHub:</strong> github.com/m1chalik
-                        </div>
+                    <div class="contact-row">
+                        <span>📧</span> <strong>Email:</strong> contact@m1chalik.gg
                     </div>
-                    <div class="contact-item">
-                        <span>📧</span>
-                        <div>
-                            <strong>Email:</strong> contact@m1chalik.github.io
-                        </div>
+                    <div class="contact-row">
+                        <span>💬</span> <strong>Discord / Socials:</strong> @m1chalik
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2026 m1chalik. Crafted with passion & hosted on GitHub Pages.</p>
+            <p>© 2026 m1chalik. All rights reserved. Powered by GitHub Pages.</p>
         </footer>
     </div>
 
